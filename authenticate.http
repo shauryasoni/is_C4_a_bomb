@@ -1,0 +1,43 @@
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+   "name" : "lionel messi",
+   "username" : "lm10",
+   "email" : "lionelmessi@gmail.com",
+   "password" : "abc123"
+
+}
+###
+POST http://localhost:5000/api/auth/signin
+Content-Type: application/json
+
+{
+
+   "email" : "lionelmessi@gmail.com",
+   "password" : "abc123"
+
+}
+###
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+   "name" : "shaurya soni",
+   "username" : "ssoni",
+   "email" : "shaurya.soni@gmail.com",
+   "password" : "abc123"
+
+}
+###
+POST http://localhost:5000/api/auth/signin
+Content-Type: application/json
+
+{
+
+   "email" : "shaurya.soni@gmail.com",
+   "password" : "abc123"
+
+}
+###
+

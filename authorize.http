@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/auth/authorize
+Content-Type: application/json
+x-auth-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxpb25lbG1lc3NpQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYwYTI5ZWEzMTZiYWY2MmY2ZGRlNjVhNSIsImlhdCI6MTYyMTU3OTUzOCwiZXhwIjoxNjIxNTg2NzM4fQ.G6YCC8upb-mUk2_T02cTAeJ0zX3XFx0zUqzZ0Fwl0XQ
+
+{
+   "name" : "lionel messi",
+   "username" : "lm10",
+   "email" : "lionelmessi@gmail.com",
+   "password" : "abc123"
+
+}
