@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/auth/authorize
+Content-Type: application/json
+Cookie :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoYXVyeWEuc29uaUBnbWFpbC5jb20iLCJ1c2VySWQiOiI2MGEzZDc0ZDQ3NTI5Y2FmMGIzN2QyMmIiLCJpYXQiOjE2MjE2MTkyMDgsImV4cCI6MTYyMTYyNjQwOH0.KXMZmCQxZOrTT2qFOeRDRazZbJBuy4JxQIFOofm8ekI
+
+{
+   "name" : "lionel messi",
+   "username" : "lm10",
+   "email" : "lionelmessi@gmail.com",
+   "password" : "abc123"
+
+}

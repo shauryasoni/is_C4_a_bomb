@@ -1,0 +1,54 @@
+
+.nav{
+    height : 10vh;
+    display : flex;
+    background-color:rgb(69, 114, 218);
+    justify-content: space-between;
+}
+.sortofcards{
+    width : 6vw;
+    background-color:rgb(62, 102, 195);
+    display: grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+    margin-left:0.05vw;
+    margin-right:0.05vw;
+    border-radius:5px;
+}
+.sortofcards:hover{
+    cursor: pointer;
+    background-color:rgb(69, 114, 218) ;
+}
+.homecard{
+    width : 6vw;
+    background-color:rgb(69, 114, 218);
+    display: grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+    font-size: 150%;
+    margin-left:0.05vw;
+    margin-right:0.05vw;
+    border-radius:5px;
+}
+.homecard:hover{
+    background-color:rgb(62, 102, 195);
+    cursor: pointer;
+}
+
+.navlinks{
+    display :flex;
+}
+
+.yes{
+    visibility: hidden;
+}
+
+.no{
+    visibility: visible;
+}
