@@ -10,6 +10,7 @@ var Password = ""; var passwordValid = false;
 function Login(props){
 
     const history = useHistory();
+    
 
     const [formValid, setFormValid] = useState(false);
     const [showError1, setShowError1] = useState("initial");
@@ -93,7 +94,7 @@ function Login(props){
         Password = e.currentTarget.value;
     }
     const gotoHome = ()=>{
-        history.replace("/home");
+        history.push("/home");
     }
     
     const reset = ()=>{

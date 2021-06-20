@@ -8,18 +8,20 @@ function LandingPage(){
 
     return(
         <>
-        <div className="wrapper">
-            <div className="title">
-                Get Started!
-            </div>
-            <div className="choice">
-                <button className="option" onClick={()=>{history.replace("/login")}}>
-                    Log In
-                </button>
-                
-                <button className="option" onClick={()=>{history.replace("/signup")}}>
-                    Sign Up
-                </button>
+        <div className="outer">
+            <div className="wrapper">
+                <div className="title">
+                    Get Started!
+                </div>
+                <div className="choice">
+                    <button className="option" onClick={()=>{history.replace("/login")}}>
+                        Log In
+                    </button>
+                    
+                    <button className="option" onClick={()=>{history.replace("/signup")}}>
+                        Sign Up
+                    </button>
+                </div>
             </div>
         </div>
         </>

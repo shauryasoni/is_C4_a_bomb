@@ -1,0 +1,26 @@
+.homecontainer{
+    border : groove;
+    display : grid;
+    height : 100%;
+}
+.hometitle{
+    border : groove;
+    text-align: center;
+}
+.page{
+    border : groove;
+    display:flex;
+    justify-content: space-between;
+
+}
+.profile{
+    border : groove;
+
+}
+.focus{
+    border : groove;
+    }
+.leaderboard{
+    border : groove;
+}
+

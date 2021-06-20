@@ -1,6 +1,19 @@
 POST http://localhost:5000/api/auth/authorize
 Content-Type: application/json
-Cookie :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoYXVyeWEuc29uaUBnbWFpbC5jb20iLCJ1c2VySWQiOiI2MGEzZDc0ZDQ3NTI5Y2FmMGIzN2QyMmIiLCJpYXQiOjE2MjE2MTkyMDgsImV4cCI6MTYyMTYyNjQwOH0.KXMZmCQxZOrTT2qFOeRDRazZbJBuy4JxQIFOofm8ekI
+Cookie :userToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxpb25lbG1lc3NpQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYwYWU4OGJkM2VkZmRhMDg0NWY2Yzc4MSIsImlhdCI6MTYyMjA1MTAwOSwiZXhwIjoxNjIyMDUxMTI5fQ.O7Cr4w2WKP4FVPNBsyVujHg4ZihABofRQuLHT3K38DE"
+
+{
+   "name" : "lionel messi",
+   "username" : "lm10",
+   "email" : "lionelmessi@gmail.com",
+   "password" : "abc123"
+
+}
+
+###
+POST http://localhost:5000/api/auth/refresh_token
+Content-Type: application/json
+Cookie :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inpha2lAZ21haWwuY29tIiwidXNlcklkIjoiNjBhZTM1OTllN2MwMTk1YTNhNjUyMTA1IiwiaWF0IjoxNjIyMTIwNDcxLCJleHAiOjE2MjIxMjA1OTF9.xk37U7a-KyBkU5XQGPqbu8bWsZ5A77B0pPvhpuLo8KU
 
 {
    "name" : "lionel messi",

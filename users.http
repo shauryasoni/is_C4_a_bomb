@@ -1,0 +1,3 @@
+POST http://localhost:5000/api/user/getInfo
+Content-Type: application/json
+Cookie : userToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inpha2lAZ21haWwuY29tIiwidXNlcklkIjoiNjBhZTM1OTllN2MwMTk1YTNhNjUyMTA1IiwiaWF0IjoxNjIyMDUxNDgwLCJleHAiOjE2MjIwNTE2MDB9.JdWeSa4ke_TEYq1uTqwfnS4WqZkrVV-T48u18CZk9ro"

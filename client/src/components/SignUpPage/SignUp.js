@@ -122,6 +122,7 @@ function SignUp(props){
                 axios.post("/api/auth/signup",userobj)
                 .then((response)=>{
                     if(response.data.success){
+                        alert("SignUp successful!")
                         console.log(response.data);
                         reset();
                         gotoLanding();

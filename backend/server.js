@@ -3,6 +3,7 @@ const connectDB = require("./config/db");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const authenticate = require("./routes/authroutes");
+const userRoutes = require("./routes/user");
 var cookieParser = require("cookie-parser");
 
 dotenv.config({path : "./config/config.env"})
@@ -16,9 +17,11 @@ app.use(express.urlencoded({
   }));
 app.use(express.json());
 app.use(cors({origin:"http://localhost:3000",credentials:true}));
-app.use("/api/auth",authenticate);
 
-app.get("/", (req,res)=>{
+app.use("/api/auth",authenticate);
+app.use("/api/user",userRoutes);
+
+app.get("/api/root", (req,res)=>{
     res.cookie("UI","Linked").json({msg:"UI linked to backend"})
     //res.sendFile('/client/src/index.html',{root:"/home/shaurya/Desktop/rct/login_sys"});
 })

@@ -4,6 +4,7 @@ const {User} = require("../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const authorize = require("../middleware/authorize");
+const refresh_token = require("../middleware/refresh_token");
 
 //Sign in 
 
@@ -27,7 +28,7 @@ router.post("/signin",(req,res, next)=>{
         let jwtToken = jwt.sign({
             email : getUser.email,
             userId :getUser._id
-        },"SecRETsArEhARDtokEeP",{expiresIn : "15m"});
+        },"SecRETsArEhARDtokEeP",{expiresIn : "2m"});
         res.status(200).cookie("userToken",jwtToken).json({
             success:true,
             msg : getUser,
@@ -44,7 +45,7 @@ router.post("/signin",(req,res, next)=>{
 //Sign up
 
 
-//bcrypt.has(a1, salt rounds) when specified without callback, returns a promise. Hence it can be used along with .then(). If the callback is specified, we must run bcrypt.hash inside a promise function with async await
+//bcrypt.hash(a1, salt rounds) when specified without callback, returns a promise. Hence it can be used along with .then(). If the callback is specified, we must run bcrypt.hash inside a promise function with async await
 
 //for functions/actions which do not return a promise, we can create a callback function, which returns a promise. In the promise we write the functionality of the original function, and resolve/reject based on whether the result was obtained or not.
 
@@ -82,5 +83,7 @@ router.post("/signup",(req,res)=>{
     });
 
 router.post("/authorize",authorize);
+
+router.post("/refresh_token",refresh_token);
 
 module.exports = router;
