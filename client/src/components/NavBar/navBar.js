@@ -29,7 +29,7 @@ function NavBar(props){
     return (
         <div  className="nav" >
 
-          <div className="homecard" onClick={()=>{ props.auth?history.push("/home") : history.replace("/") }}>
+          <div className="homecard" onClick={()=>{ props.auth?history.replace("/home") : history.replace("/") }}>
               Home
           </div>
 

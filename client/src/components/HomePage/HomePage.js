@@ -9,7 +9,7 @@ function HomePage(){
  
     useEffect(()=>{
         console.log("In home page");
-        return(()=>{console.log("Re rendering home")})
+        return(()=>{console.log("out of home")})
     });
 
     return(
@@ -18,7 +18,7 @@ function HomePage(){
             <div className="hometitle">
                 <h1>That's where you want to be </h1>
             </div>
-
+            
             <div className="page"> 
 
                 <div className="profile">
@@ -32,7 +32,7 @@ function HomePage(){
                 <div className="leaderboard">
                     leaderboard
                 </div>
-
+            
             </div>
         </div>
     )
